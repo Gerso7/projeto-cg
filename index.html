@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto CG - Robô Articulado</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #dcdcdc;
+      font-family: Arial, sans-serif;
+    }
+
+    canvas {
+      display: block;
+      margin: 0 auto;
+      background: #ececec;
+    }
+
+    .info {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(255,255,255,0.9);
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="info">
+    <strong>Controles</strong><br>
+    A / D = ombro<br>
+    W / S = cotovelo<br>
+    J / L = quadril<br>
+    I / K = joelho<br>
+    Q / E = zoom<br>
+    Espaço = liga/desliga animação
+  </div>
+
+  <canvas id="canvas" width="1000" height="650"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
